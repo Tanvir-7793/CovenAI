@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚖️ CovenAI - AI-Powered Legal Documentation Assistant
 
-## Getting Started
+CovenAI is an AI-powered web platform that simplifies the creation, review, and management of legal documents.  
+It helps users generate accurate legal drafts, analyze and simplify complex clauses, and collaborate in real-time — all powered by **Gemini AI**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **AI Document Generator**
+  - User selects a document type (Rent Agreement, NDA, Affidavit, etc.)
+  - Gemini AI generates a legally formatted draft automatically.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **AI Review & Simplify**
+  - Upload or paste text to get simplified, summarized, or legally corrected content.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **AI Legal Assistant (Chatbot)**
+  - Gemini-powered chatbot that answers user’s legal or document-related questions.
 
-## Learn More
+- **OCR Integration**
+  - Extracts editable text from scanned or photographed legal documents.
 
-To learn more about Next.js, take a look at the following resources:
+- **Multi-language Support**
+  - Simplifies or translates legal documents into Indian regional languages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Document Storage & Management**
+  - Save, manage, and track all created or edited documents in Firebase.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Real-time Collaboration**
+  - Edit documents with team members simultaneously using Firestore’s real-time sync.
 
-## Deploy on Vercel
+- **User Dashboard**
+  - View created documents, AI insights, and personalized recommendations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏗️ Tech Stack
+
+| Layer | Technology | Purpose |
+|-------|-------------|----------|
+| **Frontend** | React + Next.js + TailwindCSS + ShadCN UI | Modern responsive UI |
+| **Backend** | Node.js + Express | API handling & Gemini AI communication |
+| **AI Integration** | Google Gemini API | Document generation, simplification, chatbot |
+| **Database** | Firebase Firestore | Document storage & metadata |
+| **Auth & Hosting** | Firebase Authentication & Hosting | Secure user management |
+| **Storage** | Firebase Storage | Upload & manage OCR files |
+| **OCR** | Google Cloud Vision API / Tesseract.js | Extract text from images |
+| **PDF Export** | jsPDF / pdf-lib | Export final documents |
+| **Collaboration** | Firestore Realtime Sync | Live shared document editing |
+
+---
+
+## 📂 Pages Overview
+
+| Page | Description |
+|------|--------------|
+| **Home** | Intro, features, call to action |
+| **Login / Signup** | Firebase authentication |
+| **Dashboard** | User’s document library, analytics, shortcuts |
+| **Document Creator** | AI-based text editor to create/edit documents |
+| **AI Review Page** | Upload text for review or simplification |
+| **OCR Upload Page** | Scan and convert physical documents |
+| **Collaboration View** | Real-time shared editing |
+| **AI Legal Assistant** | Gemini chatbot for legal queries |
+| **Profile / Settings** | Manage preferences, language, account |
+| **Admin Panel (optional)** | Manage users, usage, and templates |
+
+---
+
+## 🧩 System Flow (Simplified)
+
