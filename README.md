@@ -60,12 +60,37 @@ It helps users generate accurate legal drafts, analyze and simplify complex clau
 | **Document Creator** | AI-based text editor to create/edit documents |
 | **AI Review Page** | Upload text for review or simplification |
 | **OCR Upload Page** | Scan and convert physical documents |
-| **Collaboration View** | Real-time shared editing |
 | **AI Legal Assistant** | Gemini chatbot for legal queries |
 | **Profile / Settings** | Manage preferences, language, account |
-| **Admin Panel (optional)** | Manage users, usage, and templates |
+
 
 ---
 
-## 🧩 System Flow (Simplified)
+
+---
+
+## 🧠 How It Works
+
+1. **User logs in** → navigates to Dashboard.
+2. **Chooses document type** → Gemini AI generates draft.
+3. **Edits in text editor** or uses **AI review** for improvements.
+4. **Uploads scanned docs** via **OCR integration** (optional).
+5. **Collaborates** with others or exports final PDF.
+6. **Saves document** securely to Firebase.
+
+---
+
+## 🧰 Installation
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/covenai.git
+cd covenai
+
+# 2️⃣ Install dependencies
+npm install
+
+# 3️⃣ Run the project
+npm run dev
+
 
