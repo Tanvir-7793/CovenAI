@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Link } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -90,9 +91,11 @@ export default function Navbar() {
         </div>
       </div>
 
-      <button className="border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">
+      <a href="login"><button className="border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">
+        
         Login
       </button>
+      </a>
     </motion.nav>
   );
 }

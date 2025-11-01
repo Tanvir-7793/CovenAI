@@ -3,6 +3,14 @@
 import { motion } from "framer-motion";
 import { main } from "framer-motion/client";
 import { FileText, Brain, ScanText, Languages, FolderOpen, User } from "lucide-react";
+import {Domine} from "next/font/google";
+
+const domine = Domine({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-domine',
+  display: 'swap',
+});
 
 export default function HomeHero() {
   const features = [
@@ -138,7 +146,7 @@ export default function HomeHero() {
             </motion.div>
           </div>
           <motion.p 
-            className="text-gray-700 text-lg max-w-2xl"
+            className={`text-gray-700 text-lg max-w-2xl ${domine.className}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -150,10 +158,11 @@ export default function HomeHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <button className="relative bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <a href="signup"><button className="relative bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <span className="relative z-10">Get Started</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 rounded-xl opacity-0 hover:opacity-100 transition-opacity duration-300" />
             </button>
+            </a>
           </motion.div>
         </motion.div>
 
@@ -239,7 +248,7 @@ export default function HomeHero() {
             
             <div className="space-y-6">
               <motion.p 
-                className="text-lg text-gray-700 leading-relaxed"
+                className={`text-lg text-gray-700 leading-relaxed ${domine.className}`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
@@ -249,7 +258,7 @@ export default function HomeHero() {
               </motion.p>
               
               <motion.p 
-                className="text-lg text-gray-700 leading-relaxed"
+                className={`text-lg text-gray-700 leading-relaxed ${domine.className}`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.3 }}
@@ -259,7 +268,7 @@ export default function HomeHero() {
               </motion.p>
 
               <motion.p 
-                className="text-lg text-gray-700 leading-relaxed"
+                className={`text-lg text-gray-700 leading-relaxed ${domine.className}`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.4 }}
@@ -270,7 +279,7 @@ export default function HomeHero() {
               </motion.p>
 
               <motion.p 
-                className="text-lg text-gray-600 leading-relaxed mb-8"
+                className={`text-lg text-gray-600 leading-relaxed mb-8 ${domine.className}`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.5 }}

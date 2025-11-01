@@ -1,16 +1,17 @@
+'use client';
 import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCQojTXYk08UeQkHNYeBC--wWH4xxcJKCw",
+  authDomain: "covenai-c09d6.firebaseapp.com",
+  projectId: "covenai-c09d6",
+  storageBucket: "covenai-c09d6.firebasestorage.app",
+  messagingSenderId: "739049462041",
+  appId: "1:739049462041:web:a578bfe56bcf7e8dd28d88",
+  measurementId: "G-BRHHNG9BYF"
 };
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
-export const githubProvider = new GithubAuthProvider();
