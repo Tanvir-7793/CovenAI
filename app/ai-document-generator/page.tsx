@@ -15,24 +15,16 @@ type DocumentFormData = {
 };
 
 // Dynamically import Froala Editor to avoid SSR issues
-const FroalaEditor = dynamic<FroalaEditorComponent>(
-  async () => {
-    if (typeof window !== 'undefined') {
-      // Import plugins
-      await import('froala-editor/js/plugins.pkgd.min.js');
-      
-      // Import the component
-      const FroalaEditorComponent = (await import('react-froala-wysiwyg')).default;
-      return FroalaEditorComponent;
-    }
-    // Return a dummy component if window is not available (SSR)
-    return function FroalaEditorFallback() {
-      return <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center">
-        Editor not available during server-side rendering
-      </div>;
-    };
-  },
-  { ssr: false, loading: () => <div>Loading editor...</div> }
+const FroalaEditor = dynamic(
+  () => import('react-froala-wysiwyg').then(mod => mod.default),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-64 bg-gray-100 rounded-lg flex items-center justify-center">
+        Loading editor...
+      </div>
+    )
+  }
 ) as React.ComponentType<any>;
 
 export default function AIDocumentGenerator() {
