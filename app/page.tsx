@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import HomeHero from "./components/HomeHero";
-import Footer from "./components/Footer";
+
+
 
 export default function HomePage() {
   return (

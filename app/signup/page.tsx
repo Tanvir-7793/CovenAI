@@ -56,7 +56,7 @@ export default function SignupPage() {
         />
       </div>
 
-      <div className="bg-white p-10 rounded-2xl shadow-xl w-full max-w-md mx-4 border border-gray-100">
+      <div className="bg-white p-10 rounded-2xl shadsow-xl w-full max-w-md mx-4 border border-gray-100">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">Create your <span className="font-bold text-blue-800">CovenAI</span> account</h1>
           <p className="text-gray-600">Get started with your legal assistant</p>
