@@ -279,15 +279,15 @@ export default function DocumentGenerator() {
                    AI Document Generator
                 </a>
                 <a
-                  href="/document-generator"
+                  href="/document-scanner"
                   className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg ${
-                    pathname === '/document-generator' 
+                    pathname === '/document-scanner' 
                       ? 'bg-blue-50 text-blue-700' 
                       : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
                   }`}
                 >
                   <FileSignature className="h-5 w-5 mr-3 text-gray-500" />
-                   AI Document Generator
+                   Smart Document Reader
                 </a>
               </nav>
             </div>
@@ -350,7 +350,7 @@ export default function DocumentGenerator() {
                 }`}
               >
                 <ScanText className="h-5 w-5 mr-3 text-gray-500" />
-                Smart Document Reade
+                Smart Document Reader
               </a>
             </nav>
           </div>
