@@ -241,7 +241,7 @@ export default function DocumentGenerator() {
                 <div className="w-8 h-8 flex-shrink-0">
                   <img 
                     src="/images/trial.png" 
-                    alt="CovenAI Logo" 
+                    alt="AI LegalDocs Logo" 
                     className="w-full h-full object-contain"
                   />
                 </div>

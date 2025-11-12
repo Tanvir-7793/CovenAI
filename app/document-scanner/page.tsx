@@ -145,7 +145,14 @@ export default function DocumentScanner() {
           >
             <div className="p-4 border-b border-gray-200 flex items-center justify-between">
               <div className="flex items-center space-x-3">
-                <div className={`${pacifico.variable} font-pacifico text-2xl text-blue-600`}>CovenAI</div>
+                <div className="w-8 h-8 flex-shrink-0">
+                  <img 
+                    src="/images/trial.png" 
+                    alt="AI LegalDocs Logo" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <h2 className="text-xl font-bold text-blue-800">CovenAI</h2>
               </div>
               <button 
                 onClick={() => setSidebarOpen(false)}
