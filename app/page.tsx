@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import HomeHero from "./components/HomeHero";
-
+import Chatbot from "./components/Chatbot";
 
 
 export default function HomePage() {
@@ -10,6 +10,7 @@ export default function HomePage() {
       <main className="flex-grow">
         <HomeHero />
       </main>
+      <Chatbot />
       
     </div>
   );

@@ -4,6 +4,7 @@ import { Pacifico } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Chatbot from "./components/Chatbot";
 
 const pacifico = Pacifico({
   weight: '400',
@@ -39,6 +40,7 @@ export default function RootLayout({
       >
         
         {children}
+        <Chatbot />
         <Footer />
       </body>
     </html>

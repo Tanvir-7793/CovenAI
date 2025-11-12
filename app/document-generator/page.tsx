@@ -286,8 +286,8 @@ export default function DocumentGenerator() {
                       : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
                   }`}
                 >
-                  <FileSignature className="h-5 w-5 mr-3 text-gray-500" />
-                   Smart Document Reader
+                  <ScanText className="h-5 w-5 mr-3 text-gray-500" />
+                  Smart Document Reader
                 </a>
               </nav>
             </div>

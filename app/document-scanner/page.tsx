@@ -186,7 +186,7 @@ export default function DocumentScanner() {
                       : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
                   }`}
                 >
-                  <ScanText className="h-5 w-5 mr-3 text-gray-500" />
+                   <ScanText className="h-5 w-5 mr-3 text-gray-500" />
                   Smart Document Reader
                 </a>
               </nav>
@@ -249,8 +249,8 @@ export default function DocumentScanner() {
                     : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
                 }`}
               >
-                <ScanText className="h-5 w-5 mr-3 text-gray-500" />
-                Smart Document Reade
+                 <ScanText className="h-5 w-5 mr-3 text-gray-500" />
+                Smart Document Reader
               </a>
             </nav>
           </div>
