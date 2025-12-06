@@ -85,9 +85,9 @@ const Footer = () => {
               Legal
             </h3>
             <ul className="space-y-3">
-              <li><a href="/privacy" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Terms of Service</a></li>
-              <li><a href="/cookies" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Cookie Policy</a></li>
+              <li><a href="/privacy-policy" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms-of-service" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Terms of Service</a></li>
+              <li><a href="/cookie-policy" className="text-gray-500 hover:text-blue-600 text-sm transition-colors">Cookie Policy</a></li>
             </ul>
           </div>
 
@@ -142,9 +142,9 @@ const Footer = () => {
             © {currentYear} CovenAI. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="/privacy" className="text-gray-400 hover:text-blue-600 text-sm transition-colors">Privacy</a>
-            <a href="/terms" className="text-gray-400 hover:text-blue-600 text-sm transition-colors">Terms</a>
-            <a href="/cookies" className="text-gray-400 hover:text-blue-600 text-sm transition-colors">Cookies</a>
+            <a href="/privacy-policy" className="text-gray-400 hover:text-blue-600 text-sm transition-colors">Privacy</a>
+            <a href="/terms-of-service" className="text-gray-400 hover:text-blue-600 text-sm transition-colors">Terms</a>
+            <a href="/cookie-policy" className="text-gray-400 hover:text-blue-600 text-sm transition-colors">Cookies</a>
           </div>
         </div>
       </div>
