@@ -10,7 +10,7 @@ export default function HomePage() {
       <main className="flex-grow">
         <HomeHero />
       </main>
-      <Chatbot />
+      
       
     </div>
   );
