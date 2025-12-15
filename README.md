@@ -2,7 +2,7 @@
 
 CovenAI is an AI-powered web platform that simplifies the creation, review, and management of legal documents.  
 It helps users generate accurate legal drafts, analyze and simplify complex clauses, and collaborate in real-time — all powered by **Gemini AI**.
-
+[![Website](https://img.shields.io/badge/Website-Live-green)](https://coven-ai-1.vercel.app/)
 ---
 
 ## 🚀 Features
