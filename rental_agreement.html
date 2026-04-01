@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Agreement - worktanvir07793 & Client</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 60px 80px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px double #000;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .header .date {
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .parties {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+        }
+
+        .parties p {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .parties strong {
+            text-transform: uppercase;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .section h2 {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .section p, .section ul {
+            font-size: 14px;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        .placeholder {
+            color: #c00;
+            font-weight: bold;
+            background-color: #ffe6e6;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .checkbox-option {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .checkbox-option input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .signature-section {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .signature-block {
+            flex: 1;
+            text-align: center;
+        }
+
+        .signature-line {
+            border-top: 2px solid #000;
+            margin-top: 60px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .signature-label {
+            font-size: 13px;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .print-button {
+            display: block;
+            width: 200px;
+            margin: 40px auto 0;
+            padding: 15px 30px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .print-button:hover {
+            background-color: #555;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 40px;
+            }
+
+            .print-button {
+                display: none;
+            }
+
+            .placeholder {
+                color: #000;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        }
+
+        .intro-text {
+            margin: 20px 0;
+            text-align: justify;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rental Agreement</h1>
+            <p class="date">Effective Date: March 30, 2026</p>
+        </div>
+
+        <div class="intro-text">
+            <p>This Rental Agreement (hereinafter referred to as the "Agreement") is entered into on this 30th day of March, 2026, by and between:</p>
+        </div>
+
+        <div class="parties">
+            <p><strong>Landlord:</strong> worktanvir07793 (hereinafter referred to as "Party A")</p>
+            <p><strong>Tenant:</strong> <span class="placeholder">[Client Name]</span> (hereinafter referred to as "Party B")</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Description of Premises</h2>
+            <p>The Landlord agrees to rent to the Tenant the property located at:</p>
+            <p><strong><span class="placeholder">[Insert Full Property Address, City, State, ZIP Code]</span></strong></p>
+            <p>(hereinafter referred to as the "Premises").</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Term of Lease</h2>
+            <p>The term of this lease shall begin on <strong>March 30, 2026</strong>, and shall continue:</p>
+            <div class="checkbox-option">
+                <input type="checkbox" id="fixed-term"> 
+                <label for="fixed-term">Until <span class="placeholder">[End Date]</span> as a fixed-term lease.</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="month-to-month"> 
+                <label for="month-to-month">On a month-to-month basis.</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Rent Payments</h2>
+            <p>The Tenant agrees to pay the Landlord the sum of <strong><span class="placeholder">$[Amount]</span></strong> per month.</p>
+            <p>Rent shall be payable in advance on the <strong><span class="placeholder">[1st]</span></strong> day of each month.</p>
+            <p>Payments shall be made via <strong><span class="placeholder">[Payment Method: Bank Transfer/Check/Cash/Online Payment]</span></strong>.</p>
+        </div>
+
+        <div class="section">
+            <h2>4. Security Deposit</h2>
+            <p>Upon execution of this Agreement, the Tenant shall deposit with the Landlord the sum of <strong><span class="placeholder">$[Amount]</span></strong> as security for any damage caused to the Premises during the term of the lease.</p>
+            <p>This deposit will be returned, less any lawful deductions, within <strong><span class="placeholder">[30]</span></strong> days of the termination of this lease.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Use of Premises</h2>
+            <p>The Premises shall be used exclusively for residential purposes and shall be occupied only by the Tenant and immediate family members. The Tenant shall not use the Premises for any illegal activities or dangerous purposes.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Utilities and Services</h2>
+            <p>The <span class="placeholder">[Landlord/Tenant]</span> shall be responsible for payment of the following utilities:</p>
+            <ul>
+                <li>Water: <span class="placeholder">[Landlord/Tenant]</span></li>
+                <li>Electricity: <span class="placeholder">[Landlord/Tenant]</span></li>
+                <li>Gas: <span class="placeholder">[Landlord/Tenant]</span></li>
+                <li>Internet/Cable: <span class="placeholder">[Landlord/Tenant]</span></li>
+                <li>Trash Collection: <span class="placeholder">[Landlord/Tenant]</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>7. Maintenance and Repairs</h2>
+            <p>The Tenant shall maintain the Premises in a clean and sanitary condition and shall be responsible for minor repairs.</p>
+            <p>The Landlord shall be responsible for major repairs and structural maintenance unless caused by the negligence or misuse of the Tenant.</p>
+        </div>
+
+        <div class="section">
+            <h2>8. Right of Entry</h2>
+            <p>The Landlord reserves the right to enter the Premises at all reasonable times, provided that at least <strong><span class="placeholder">[24]</span></strong> hours' notice is given to the Tenant, for the purpose of inspection, repairs, or showing the property to prospective tenants or buyers.</p>
+        </div>
+
+        <div class="section">
+            <h2>9. Pets</h2>
+            <p>Pets <span class="placeholder">[are/are not]</span> permitted on the Premises. If permitted, a pet deposit of <span class="placeholder">$[Amount]</span> shall be required.</p>
+        </div>
+
+        <div class="section">
+            <h2>10. Termination</h2>
+            <p>Either party may terminate this Agreement by providing <strong><span class="placeholder">[30]</span></strong> days' written notice to the other party.</p>
+            <p>The Tenant shall vacate the Premises by the termination date and leave it in good condition, normal wear and tear excepted.</p>
+        </div>
+
+        <div class="section">
+            <h2>11. Governing Law</h2>
+            <p>This Agreement shall be governed by and construed in accordance with the laws of <strong><span class="placeholder">[State/Province/Country]</span></strong>.</p>
+        </div>
+
+        <div class="section">
+            <h2>12. Entire Agreement</h2>
+            <p>This document constitutes the entire agreement between the parties. No other promises, conditions, understandings, or modifications have been made or implied other than those expressly contained herein.</p>
+            <p>This Agreement may only be modified by a written document signed by both parties.</p>
+        </div>
+
+        <div class="signature-section">
+            <div class="signature-block">
+                <div class="signature-line">worktanvir07793</div>
+                <div class="signature-label">Landlord Signature</div>
+                <div class="signature-label">Date: _______________</div>
+            </div>
+            <div class="signature-block">
+                <div class="signature-line"><span class="placeholder">[Client Name]</span></div>
+                <div class="signature-label">Tenant Signature</div>
+                <div class="signature-label">Date: _______________</div>
+            </div>
+        </div>
+
+        <button class="print-button" onclick="window.print()">Print or Save as PDF</button>
+    </div>
+</body>
+</html>
